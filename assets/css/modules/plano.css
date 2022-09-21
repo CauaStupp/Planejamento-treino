@@ -88,16 +88,19 @@ main {
     font-style: italic;
     position: relative;
     margin-top: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .plano-footer::before {
     content: '';
     background-color: #002F76;
-    width: 10px;
-    height: 10px;
+    border: 2px solid black;
+    width: 7px;
+    height: 7px;
     position: absolute;
     border-radius: 100px;
-    left: 25px;
+    left: 35px;
     top: 50%;
     transform: translateY(-50%);
 }
