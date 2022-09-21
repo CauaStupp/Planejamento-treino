@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.plano {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plano-card {
+    background-color: #0066FF;
+    border-radius: 5px;
+    width: 230px;
+    height: 250px;
+    margin: 20px;
+    box-shadow: 4px 4px 0px #002F76;
+}
+
+.plano-header {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.plano-header::before {
+    content: '';
+    background-color: #FF6B00;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -15px;
+    top: -20px;
+    box-shadow: 2px 2px 6px #0000003f;
+}
+
+.plano-header h2 {
+    font-size: 2.1rem;
+    color: #002F76;
+}
+
+.plano-body {
+    padding: 10px 40px;
+}
+
+.plano-body p {
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.plano-body p::before {
+    content: '';
+    background-color: #FF6B00;
+    border-radius: 100px;
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -20px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+.plano-header.active::before {
+    background-color: #00FF19;
+}
+
+.plano-body p.active::before {
+    background-color: #00FF19;
+}
+
+
+
+
+
+.plano-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-style: italic;
+}
+
+.plano-footer::before {
+    content: '';
+    background-color: #FF6B00;
+
+}
