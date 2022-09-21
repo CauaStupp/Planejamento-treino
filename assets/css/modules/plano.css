@@ -86,10 +86,18 @@ main {
     justify-content: center;
     align-items: flex-end;
     font-style: italic;
+    position: relative;
+    margin-top: 30px;
 }
 
 .plano-footer::before {
     content: '';
-    background-color: #FF6B00;
-
+    background-color: #002F76;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
 }
